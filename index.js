@@ -99,8 +99,8 @@ Car.prototype.drive = function(distance){
   this.odometer += distance;  
   if(this.tank > distance){
     this.tank -= distance;
-  }else if(this.tank === 0){
-    console.log(`I ran out of fuel at ${this.odometer} miles!`)
+  }if(this.tank === 0){
+    return (`I ran out of fuel at ${this.odometer} miles!`);
   }
 };
 
@@ -148,7 +148,7 @@ const ashley = new Baby("Ashley", "18 months", "trains");
 
   
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
-    
+
     https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262
 
 
