@@ -112,9 +112,7 @@ Car.prototype.drive = function(distance){
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name, age, favoriteToy) {
-   Person.bind;
-   this.name = name;
-   this.age = age;
+   Person.call(this, name, age);
    this.favoriteToy = favoriteToy;
 }
 
