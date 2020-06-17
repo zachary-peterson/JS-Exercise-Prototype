@@ -124,7 +124,6 @@ Baby.prototype.play = function(){
   return(`Playing with ${this.favoriteToy}`)
 };
 
-const ashley = new Baby("Ashley", "18 months", "trains");
 /* 
   TASK 4
 
