@@ -129,10 +129,29 @@ const ashley = new Baby("Ashley", "18 months", "trains");
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window/Global Object Binding - 
+  
+    Everything available in the Global Scope. For example, this being consoled on Google's home page in inspect gives access to everything in the Window. Essentially showing you everything included in the JavaScript language. 
+
+  2. Implicit Binding -
+
+    Look to the left of the dot.
+
+  3. New binding -
+
+    When creating a binding with new, it's the binding between the object being created and this will apply to all of the properties in the new object being created.
+
+  4. Explicit binding -
+
+    Occurs when .call, .bind, or .apply are used on a function. You're explicitly passing in a this context. 
+
+
+  
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+    
+    https://gist.github.com/zcaceres/2a4ac91f9f42ec0ef9cd0d18e4e71262
+
+
 */
 
 
